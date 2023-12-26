@@ -1,12 +1,11 @@
 <template>
   <header>
-    <Navbar />
   </header>
   <main>
     <router-view />
   </main>
-   <footer class="bg-dark text-light">
-    Made with 💖 by CodeWorks
+   <footer class=" text-light">
+    <Navbar/>
   </footer>
 </template>
 
@@ -32,9 +31,4 @@ export default {
 }
 
 
-footer {
-  display: grid;
-  place-content: center;
-  height: 32px;
-}
 </style>

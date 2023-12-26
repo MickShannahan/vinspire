@@ -2,6 +2,11 @@ import Axios from 'axios'
 import { baseURL } from '../env'
 import { logger } from '../utils/Logger.js'
 
+export const unApi = Axios.create({
+  baseURL: 'https://unsandbox.herokuapp.com/',
+  timeout: 15000
+})
+
 export const api = Axios.create({
   baseURL,
   timeout: 8000
